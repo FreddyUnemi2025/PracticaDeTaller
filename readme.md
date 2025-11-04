@@ -76,5 +76,22 @@ To https://github.com/FreddyUnemi2025/PracticaDeTaller
  * [new branch]      master -> master
 branch 'master' set up to track 'PracticaDeTaller/master'.
 
-Freddy@DESKTOP-STRSKJA MINGW64 ~/Desktop/Backend Proyects/CONTPRECNGSTS/practicaproyecto/Practica2 (master)
+# Descargar nuevos cambios
+Freddy@DESKTOP-STRSKJA MINGW64 ~/Desktop/Backend Proyects/CONTPRECNGSTS/practicaproyecto/Practica2 (rama-para-invitados)
+$ git fetch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 706 bytes | 50.00 KiB/s, done.
+From https://github.com/FreddyUnemi2025/PracticaDeTaller
+   695926e..3595308  rama-para-invitados -> PracticaDeTaller/rama-para-invitados      
+
+Freddy@DESKTOP-STRSKJA MINGW64 ~/Desktop/Backend Proyects/CONTPRECNGSTS/practicaproyecto/Practica2 (rama-para-invitados)
+$ git pull
+Updating 695926e..3595308
+Fast-forward
+ index.html | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
 
