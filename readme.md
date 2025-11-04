@@ -95,3 +95,64 @@ Fast-forward
  1 file changed, 13 insertions(+)
  create mode 100644 index.html
 
+ # Errores a la hora de subir dos personas
+
+```
+ Ale@Zambrano MINGW64 ~/OneDrive/Escritorio/p/PracticaDeTaller (rama-para-invitados)
+$ git push
+info: please complete authentication in your browser...
+To https://github.com/FreddyUnemi2025/PracticaDeTaller
+ ! [rejected]        rama-para-invitados -> rama-para-invitados (fetch first)  
+error: failed to push some refs to 'https://github.com/FreddyUnemi2025/PracticaDeTaller'
+hint: Updates were rejected because the remote contains work that you do not   
+hint: have locally. This is usually caused by another repository pushing to    
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.     
+
+Ale@Zambrano MINGW64 ~/OneDrive/Escritorio/p/PracticaDeTaller (rama-para-invitados)
+$ git push
+To https://github.com/FreddyUnemi2025/PracticaDeTaller
+ ! [rejected]        rama-para-invitados -> rama-para-invitados (fetch first)  
+error: failed to push some refs to 'https://github.com/FreddyUnemi2025/PracticaDeTaller'
+hint: Updates were rejected because the remote contains work that you do not   
+hint: have locally. This is usually caused by another repository pushing to    
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.     
+
+Ale@Zambrano MINGW64 ~/OneDrive/Escritorio/p/PracticaDeTaller (rama-para-invitados)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1.96 KiB | 167.00 KiB/s, done.
+From https://github.com/FreddyUnemi2025/PracticaDeTaller
+   b1dde03..695926e  rama-para-invitados -> origin/rama-para-invitados
+hint: Waiting for your editor to close the file... Vim: Error reading input, exiting...
+        Vim: preserving files...
+Vim: Finished.
+
+error: there was a problem with the editor 'vi'
+Not committing merge; use 'git commit' to complete the merge.
+
+Ale@Zambrano MINGW64 ~/OneDrive/Escritorio/p/PracticaDeTaller (rama-para-invitados|MERGING)
+$ git commit -m "jaja"
+[rama-para-invitados 3595308] jaja
+
+Ale@Zambrano MINGW64 ~/OneDrive/Escritorio/p/PracticaDeTaller (rama-para-invitados)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 726 bytes | 363.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/FreddyUnemi2025/PracticaDeTaller
+   695926e..3595308  rama-para-invitados -> rama-para-invitados
+
+Ale@Zambrano MINGW64 ~/OneDrive/Escritorio/p/PracticaDeTaller (rama-para-invitados)
+$
+```
+
