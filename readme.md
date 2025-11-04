@@ -1,5 +1,6 @@
-comandos
-
+Comandos
+# Configuracion
+```
 Freddy@DESKTOP-STRSKJA MINGW64 ~/Desktop/Backend Proyects/CONTPRECNGSTS/practicaproyecto
 $ mkdir Practica2
 
@@ -22,10 +23,10 @@ push.autosetupremote=true
 
 Ahora se elimina la cuenta de git del windows con el administrador de credenciales o Credential Manager.
 Buscas el que dice https://github.com y lo eliminas ahora podras subir en una nueva cuenta
-
+```
 
 # Crear, subir y sincronizar el repositorio
-
+```
 Freddy@DESKTOP-STRSKJA MINGW64 ~/Desktop/Backend Proyects/CONTPRECNGSTS/practicaproyecto/Practica2
 $ git init 
 Initialized empty Git repository in C:/Users/Freddy/Desktop/Backend Proyects/CONTPRECNGSTS/practicaproyecto/Practica2/.git/
@@ -114,9 +115,9 @@ Writing objects: 100% (3/3), 1.22 KiB | 1.22 MiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/FreddyUnemi2025/PracticaDeTaller
    e77f38b..b1dde03  master -> master
-
+```
 # Crear Rama
-
+```
 Freddy@DESKTOP-STRSKJA MINGW64 ~/Desktop/Backend Proyects/CONTPRECNGSTS/practicaproyecto/Practica2 (master)
 $ git checkout -b "Rama para invitados"
 fatal: 'Rama para invitados' is not a valid branch name
@@ -132,7 +133,7 @@ $ git checkout master
 Switched to branch 'master'
 Your branch is up to date with 'PracticaDeTaller/master'.
 
-
+```
 # Errores a la hora de subir dos personas
 
 ```
