@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bienvenida</title>
+    <style>
+        :root{
+            --bg1:#ffecd2;
+            --bg2:#fcb69f;
+            --card:#ffffffcc;
+            --accent:#ff6f61;
+            --muted:#6b6b6b;
+        }
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{
+            margin:0;
+            font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+            background: linear-gradient(135deg,var(--bg1),var(--bg2));
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:2rem;
+        }
+        .welcome-card{
+            width:100%;
+            max-width:920px;
+            background:linear-gradient(180deg, rgba(255,255,255,0.95), var(--card));
+            border-radius:18px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.12);
+            overflow:hidden;
+            display:grid;
+            grid-template-columns: 1fr 420px;
+            align-items:center;
+            gap:1.5rem;
+            padding:2.25rem;
+        }
+        @media (max-width:880px){
+            .welcome-card{grid-template-columns:1fr; padding:1.25rem;}
+        }
+        .text{
+            padding:0 1rem;
+        }
+        h1{
+            margin:0 0 .35rem 0;
+            font-size:2.25rem;
+            color:#222;
+            letter-spacing:-0.5px;
+        }
+        p.lead{
+            margin:0 0 1rem 0;
+            color:var(--muted);
+            line-height:1.45;
+            font-size:1.05rem;
+        }
+        .actions{
+            display:flex;
+            gap:.75rem;
+            margin-top:1rem;
+        }
+        .btn{
+            appearance:none;
+            border:0;
+            padding:.7rem 1rem;
+            border-radius:10px;
+            cursor:pointer;
+            font-weight:600;
+            color:white;
+            background:linear-gradient(90deg,var(--accent),#ff8a66);
+            box-shadow:0 6px 18px rgba(255,111,97,0.18);
+            transition:transform .18s ease, box-shadow .18s ease;
+        }
+        .btn:active{transform:translateY(1px)}
+        .btn.secondary{
+            background:transparent;
+            color:#444;
+            box-shadow:none;
+            border:1px solid rgba(0,0,0,0.06);
+        }
+        /* Illustration */
+        .art{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:1rem;
+        }
+        .bubbles{
+            width:340px;
+            height:220px;
+            position:relative;
+        }
+        .bubble{
+            position:absolute;
+            border-radius:50%;
+            filter:drop-shadow(0 8px 20px rgba(255,111,97,0.14));
+            animation:float 6s ease-in-out infinite;
+            opacity:.95;
+        }
+        .b1{width:130px;height:130px;background:linear-gradient(135deg,#fff7f6,#ffd7cf);left:12px;top:32px;transform:rotate(-12deg);animation-duration:7s;}
+        .b2{width:88px;height:88px;background:linear-gradient(135deg,#fffaf0,#ffc8ab);right:18px;top:10px;animation-duration:5.5s;opacity:.96}
+        .b3{width:64px;height:64px;background:linear-gradient(135deg,#fffdf9,#ffd6b8);right:70px;bottom:28px;animation-duration:6.5s;opacity:.98}
+        .b4{width:42px;height:42px;background:linear-gradient(135deg,#fff6f3,#ffcdc0);left:60px;bottom:6px;animation-duration:4.8s;opacity:.95}
+        @keyframes float{
+            0%{transform:translateY(0) rotate(0deg)}
+            50%{transform:translateY(-12px) rotate(6deg)}
+            100%{transform:translateY(0) rotate(0deg)}
+        }
+        footer{
+            text-align:center;
+            margin-top:1.1rem;
+            color:rgba(0,0,0,0.45);
+            font-size:0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <main class="welcome-card" role="main">
+        <section class="text" aria-labelledby="welcome-title">
+            <h1 id="welcome-title">¡Bienvenido/a!</h1>
+            <p class="lead">Qué gusto tenerte aquí. Este espacio está listo para tu proyecto: limpia, cálido y listo para personalizar.</p>
+            <div class="actions">
+                <button class="btn" onclick="start()">Comenzar</button>
+                <button class="btn secondary" onclick="learnMore()">Más información</button>
+            </div>
+            <footer>Consejo: personaliza este archivo home.html para adaptar la bienvenida a tu proyecto.</footer>
+        </section>
+
+        <aside class="art" aria-hidden="true">
+            <div class="bubbles" role="img" aria-label="Ilustración de bienvenida con burbujas">
+                <div class="bubble b1"></div>
+                <div class="bubble b2"></div>
+                <div class="bubble b3"></div>
+                <div class="bubble b4"></div>
+            </div>
+        </aside>
+    </main>
+
+    <script>
+        function start(){
+            alert("¡Vamos! Empieza personalizando tu página.");
+        }
+        function learnMore(){
+            alert("Edita /c:/Users/mario/Downloads/github/PracticaDeTaller/home.html para cambiar el contenido.");
+        }
+    </script>
+</body>
+</html>
